@@ -1,2 +1,2 @@
-#include <studio.h>
-gcc -E $CFILE -o interm
+#!/bin/bash
+#gcc -E $CFILE -o interm
