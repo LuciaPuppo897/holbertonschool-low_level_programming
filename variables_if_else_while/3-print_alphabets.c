@@ -10,8 +10,6 @@ int main(void)
 	char alphabet;
 	char ALPHABET;
 
-	printf("Print lower and upercase alohabet");
-
 	for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
 	{
 		putchar(alphabet);
