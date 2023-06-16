@@ -1,14 +1,16 @@
 #include <stdio.h>
 /**
- * main Entry point
+ * main - Entry point
  *
- * Return: always 0 (success)
+ * Return: Always 0 (success)
  *
  */
 int main(void)
 {
 	char alphabet;
 	char ALPHABET;
+
+	printf("Print lower and upercase alohabet")
 
 	for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
 	{
