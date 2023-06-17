@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * _printsing - Checks if less or greater than 0
+  * print_sing - Checks if less or greater than 0
   * @n: The number to be checked
   *
   * Return: 1 for grater  0 for zero or -1 for anything else
@@ -8,16 +8,16 @@
 int print_sing(int n)
 {
 	if (n > 0)
-        {
+	{
 		_putchar(43);
 		return (1);
 	}
 	else if (n < 0)
 	{
 		_putchar(45);
-        	return (-1);
+		return (-1);
 	}
-	else 
+	else
 	{
 		_putchar(0);
 		return (0);
