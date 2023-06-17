@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-  * print_sing - Checks if less or greater than 0
+  * print_sign - Checks if less or greater than 0
   * @n: The number to be checked
   *
   * Return: 1 for grater  0 for zero or -1 for anything else
   */
-int print_sing(int n)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
