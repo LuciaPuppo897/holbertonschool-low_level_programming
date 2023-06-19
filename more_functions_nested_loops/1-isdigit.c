@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  * _isdigit - check if int is a digit
  * @c: the int to check
  *
@@ -12,5 +12,5 @@ int _isdigit(int c)
 	{
 		return (1);
 	}
-	return(0);
+	return (0);
 }
