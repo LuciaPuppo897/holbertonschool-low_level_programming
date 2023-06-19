@@ -13,7 +13,6 @@ int _abs(int n)
 {
 	printf("%d./n",n);
 }
-else
-{
+
 	return (0);
 }
