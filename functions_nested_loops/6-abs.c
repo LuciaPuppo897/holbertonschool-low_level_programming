@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ *_abs - recibe a value return absolute value of n
+ *@n: entery value
+ *
+ *Return: absolute value or 0
+ */
+int _abs(int n)
+{
+if (n <= 0)
+{
+	_putchar (n * -1);
+}
+else
+	_putchar(n);
+
+	_putchar('\n');
+	return (0);
+}
