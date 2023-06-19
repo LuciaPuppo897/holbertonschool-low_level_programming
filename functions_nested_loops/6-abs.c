@@ -8,13 +8,14 @@
  */
 int _abs(int n)
 {
-if (n <= 0)
+
+	if (n < 0)
 {
-	_putchar (n * -1);
+	printf("%d./n", n * -1);
 }
-else{
-	_putchar(n);
+else
+{
+	printf("%d.\n", n);
 }
-	_putchar('\n');
-	return (0);
+return (0);
 }
