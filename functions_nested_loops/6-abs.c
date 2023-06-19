@@ -13,6 +13,9 @@ int _abs(int n)
 {
 	printf("%d", n * -1);
 }
-
+else 
+{
 	return(n);
+}
+	return(0);
 }
