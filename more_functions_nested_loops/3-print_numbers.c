@@ -8,11 +8,11 @@
  */
 void print_numbers(void)
 {
-	char c = '0';
+	char c = 0;
 
-	while (c <= '9')
+	while (c <= 9)
 {
-		printf("%d", c);
+		putchar(c);
 		c++;
 }
 	putchar('\n');
