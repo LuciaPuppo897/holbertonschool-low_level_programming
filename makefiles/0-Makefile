@@ -1,1 +1,2 @@
- school : all  
+school: school.c
+cc school.c -o school 
