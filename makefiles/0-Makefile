@@ -1,2 +1,5 @@
-school: school.c
-cc school.c -o school 
+	all: school
+school: school.o 
+		gcc -Wall -g -o school school.c
+clean:
+	rm -f school *.o
