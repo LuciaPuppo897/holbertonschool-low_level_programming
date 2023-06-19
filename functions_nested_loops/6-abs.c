@@ -12,9 +12,8 @@ if (n <= 0)
 {
 	_putchar (n * -1);
 }
-else
+else{
 	_putchar(n);
-
+}
 	_putchar('\n');
-	return (0);
 }
