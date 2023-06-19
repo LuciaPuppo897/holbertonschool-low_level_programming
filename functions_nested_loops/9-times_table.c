@@ -12,9 +12,9 @@ int n;
 	int firstdigit;
 	int seconddigit;
 	int r;
-for (n = 0; n <= 10; n++)
+for (n = 0; n < 10; n++)
 {
-	for (m = 0; m <= 0; m++)
+	for (m = 0; m < 10; m++)
 {
 		r = n * m;
 		firstdigit = r / 10;
