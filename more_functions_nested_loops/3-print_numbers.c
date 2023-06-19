@@ -1,18 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 /**
- *print_number - prints number 0 to 9
- *@n: char value
+ *print_numbers - prints number 0 to 9
+ *@n: value
  *
  *Return: 0
  */
 void print_numbers(void)
 {
-	char c = 48;
+	char c = '0';
 
-	while (c <= 57)
+	while (c <= '9')
 {
-		_putchar(c);
+		printf("%d", c);
 		c++;
 }
-	_putchar('\n');
+	putchar('\n');
 }
