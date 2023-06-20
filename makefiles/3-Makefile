@@ -7,6 +7,7 @@ RM = rm
 all:
 	${CC} ${OBJ} -o ${NAME}
 
+name:${school}
 
 clean: 
 	${RM} -f *~ ${NAME}
@@ -14,7 +15,8 @@ clean:
 oclean:
 	${RM} -f ${OBJ}	
 
-fclean: clean oclean
+fclean: 
+	${RM} clean oclean
 
 re: oclean all
 	.PHONY: clean oclean fclean rm
