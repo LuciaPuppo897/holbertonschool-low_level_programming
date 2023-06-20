@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
   * print_square - Prints n squares according to n value
   * @size: The large and broad of the squere
@@ -7,12 +8,12 @@
   */
 void print_square(int size)
 {
-	int x, y;
-    char enterChar(void);
+int x; 
+int y; 
 
 	if (size <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	}
 	else
 	{
@@ -20,10 +21,10 @@ void print_square(int size)
 		{
 			for (y = 0; y < size; y++)
 			{
-				putchar(35);
+				_putchar(35);
 			}
 
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
