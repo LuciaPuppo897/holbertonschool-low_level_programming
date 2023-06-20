@@ -20,7 +20,7 @@ int o;
         {
                 for (m = 0; m < size; m++)
                 {
-                        for (n = size -1; n > 1; n--)
+                        for (n = size -m; n > 1; n--)
                         {
                                 _putchar(32);
                         }
