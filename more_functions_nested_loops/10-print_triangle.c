@@ -19,7 +19,7 @@ int n;
         {
                 for (m = 0; m < size; m++)
                 {
-                        for (y = n; n < size; n--)
+                        for (n = m; n < size; n--)
                         {
                                 _putchar(35);
                         }
@@ -27,3 +27,4 @@ int n;
                         _putchar('\n');
                 }
         }
+}
