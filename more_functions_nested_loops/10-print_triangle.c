@@ -22,7 +22,7 @@ int o;
                 {
                         for (n = size -1; n > 1; n--)
                         {
-                                _putchar(33);
+                                _putchar(32);
                         }
 
                         for (o = 0; o <= m; o++)
