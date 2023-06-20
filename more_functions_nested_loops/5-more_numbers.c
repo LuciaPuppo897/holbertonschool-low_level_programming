@@ -2,9 +2,9 @@
 /**
  * more_numbers - Make numbers from 0 to 14 x10 times
  *
- * _putchar(char)
+ * putchar(char)
  */
-void print_alphabet_x10(void)
+void print_more_numbers(void)
 {
 	char c;
 
@@ -12,11 +12,11 @@ void print_alphabet_x10(void)
 
 	while (i <= 9)
 	{
-		for (c = 'a'; c <= 'z'; c++)
+		for (c = '48'; c <= '57'; c++)
 	{
-		_putchar(c);
+		putchar(c);
 	}
-		_putchar('\n');
+		putchar('\n');
 		i++;
 		}
 }
