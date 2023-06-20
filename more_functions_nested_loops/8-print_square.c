@@ -1,12 +1,9 @@
 #include "main.h"
-
 /**
   * print_square - Prints n squares according to n value
-
-
   * @size: The large and broad of the squere
   *
-  * Return: empty
+  * Return: always 0
   */
 void print_square(int size)
 {
