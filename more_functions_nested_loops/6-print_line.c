@@ -4,7 +4,7 @@
   * print_line - Draws a straight line according to a given number
   * @n: how many lines to draw
   *
-  *	Return:0 
+  *	Return:0
   */
 void print_line(int n)
 {
