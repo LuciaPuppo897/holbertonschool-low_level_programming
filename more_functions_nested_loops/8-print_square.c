@@ -8,8 +8,8 @@
   */
 void print_square(int size)
 {
-int x; 
-int y; 
+int x;
+int y;
 
 	if (size <= 0)
 	{
