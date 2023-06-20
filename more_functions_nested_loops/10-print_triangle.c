@@ -10,6 +10,7 @@ void print_triangle(int size)
 {
 int m;
 int n;
+int o;
 
         if (size <= 0)
         {
@@ -21,10 +22,16 @@ int n;
                 {
                         for (n = size -1; n > 1; n--)
                         {
-                                _putchar(35);
+                                _putchar(33);
                         }
 
+                        for (o = 0; o <= m; o++)
+						{
+								_putchar(35);
+						}
                         _putchar('\n');
                 }
         }
+						
 }
+
