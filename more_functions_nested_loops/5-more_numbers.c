@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *print_more_numbers - Make numbers from 0 to 14 x10 times
+ * more_numbers - Make numbers from 0 to 14 x10 times
  *
  * putchar(char)
  */
-void print_more_numbers(void)
+void more_numbers(void)
 {
 	char c;
 
