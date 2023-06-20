@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * more_numbers - Make numbers from 0 to 14 x10 times
+ *print_more_numbers - Make numbers from 0 to 14 x10 times
  *
  * putchar(char)
  */
