@@ -3,6 +3,7 @@ HOLBERTON C PROJECT
 * Neested loops
 * More nested loops
 * Make files
+
 What happens when you type gcc main.c
 What is an entry point
 What is main
