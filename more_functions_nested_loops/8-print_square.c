@@ -8,6 +8,7 @@
 void print_square(int size)
 {
 	int x, y;
+    char enterChar(void);
 
 	if (size <= 0)
 	{
