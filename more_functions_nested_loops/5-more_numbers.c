@@ -13,7 +13,7 @@ void print_more_numbers(void)
 
 	while (i <= 9)
 	{
-		for (c = 0; c <= 9; c++)
+		for (c = 0; c <= 14; c++)
 	{
 		_putchar(c);
 	}
