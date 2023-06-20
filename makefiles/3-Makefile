@@ -20,4 +20,4 @@ fclean:
 
 re: oclean all
 
-	.PHONY: clean oclean fclean rm
+	.PHONY: clean oclean fclean re
