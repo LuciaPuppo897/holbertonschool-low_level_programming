@@ -4,7 +4,7 @@ OBJ = ${SRC:.c=.o}
 NAME= school
 RM = rm -f
 
-all: m.h ${OBJ}
+all:${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
 name:${school}
@@ -19,4 +19,5 @@ fclean:
 	clean oclean
 
 re: oclean all
+
 	.PHONY: clean oclean fclean rm
