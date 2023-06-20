@@ -19,7 +19,7 @@ int n;
         {
                 for (m = 0; m < size; m++)
                 {
-                        for (n = size; n < 1; n--)
+                        for (n = size -1; n > 1; n--)
                         {
                                 _putchar(35);
                         }
