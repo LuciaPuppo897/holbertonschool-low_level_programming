@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*reset_to_98 - Update n to 98 
+*reset_to_98 - Update *n to 98
 *@*n: the poitnet to n
 *
 * Return: always 0
