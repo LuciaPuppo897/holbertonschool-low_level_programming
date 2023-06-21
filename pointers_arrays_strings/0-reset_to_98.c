@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 *reset_to_98 - Update *n to 98
-*@*n: the pointer 
+*@*n: the pointer
 *
 * Return: always 0
 */
