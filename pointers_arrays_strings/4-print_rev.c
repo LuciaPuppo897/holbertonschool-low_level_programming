@@ -11,9 +11,8 @@ void print_rev(char *s)
 	int c = 0;
 	int size = strlen(s);
 
-	for (c = size - 1; c >= 0; c--)
+	for (c = 0; c < size / 2; c++)
 	{
-		_putchar(s[c]);
+		swap(str[c], str[ n - c -1 ]);
 	}
-_putchar('\n');
 }
