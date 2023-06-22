@@ -13,6 +13,6 @@ void print_rev(char *s)
 
 	for (c = 0; c < size / 2; c++)
 	{
-		swap(str[c], str[ n - c -1 ]);
+		swap(s[c], s[size - c -1 ]);
 	}
 }
