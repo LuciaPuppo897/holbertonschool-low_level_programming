@@ -15,5 +15,5 @@ for (c = 0; c < n; c++)
 	if (c != n - 1)
 		printf(", ");
 }
-_putchar('\n');
+
 }
