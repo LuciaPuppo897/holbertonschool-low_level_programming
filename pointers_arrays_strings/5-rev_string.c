@@ -8,13 +8,19 @@
  */
 void print_rev(char *s)
 {
-	int size = strlen(s);
-	char change;
+	int size = 0;
+	int c = 0;
+	char *value, change;
 
-	for (int c = 0; c <= (size / 2); c++)
+	while (s[c] != '\0')
+	{
+		size++;
+	}
+	while (c < size--)
 	{
 		change = s[c];
-		s[c] = s[(size - c)]; 
-		s[(size -c)] = change;
+		s[c]= *value;
+		*value = change;
+	
 	}
 }
