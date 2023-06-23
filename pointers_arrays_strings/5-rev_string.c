@@ -9,9 +9,12 @@
 void print_rev(char *s)
 {
 	int size = strlen(s);
+	char change;
 
-	for (int c = 0; c < size / 2; c++)
+	for (int c = 0; c <= (size / 2); c++)
 	{
-		swap(s[c], s[size - c - 1]);
+		change = s[c];
+		s[c] = s[(size - c)]; 
+		s[(size -c)] = change;
 	}
 }
