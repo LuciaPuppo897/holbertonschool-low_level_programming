@@ -10,9 +10,9 @@
 void puts_half(char *str)
 {
 	int c;
-	int size = strlen(str) -1;
+	int size = strlen(str) - 1;
 
-	for( c = size / 2; str[c] != '\0'; c++)
+	for (c = size / 2; str[c] != '\0'; c++)
 	 _putchar(str[c]);
 
 	_putchar('\n');
