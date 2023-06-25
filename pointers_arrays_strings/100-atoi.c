@@ -21,7 +21,7 @@ int _atoi(char *s)
 		s++;
 	}
 
-	while (*s >= 48 && *s <= 57)
+	while (*s >= '0' && *s <= '9')
 	{
 		result = (result * 10) + (*s - '0');
 		s++;
