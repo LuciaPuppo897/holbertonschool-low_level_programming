@@ -11,12 +11,13 @@ int _atoi(char *s)
 {
     int sign = 1;
     int result = 0;
-	int isi = 0;
+	int isi = 0; //is an int
+
 	while (*s)
 	{
 		if (*s == '-')
 			{
-				sign = (sign * -1);
+				sign *= -1;
 				s++;
 			}
 		else if (*s >= '0' && *s <= '9')
@@ -33,7 +34,7 @@ int _atoi(char *s)
 		else
 		s++;
 	}
-
-	return sign * result;
+		result *= sign;
+	return (result);
 }
 
