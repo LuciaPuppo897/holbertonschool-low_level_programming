@@ -4,6 +4,7 @@
  *@dest: dest string
  *@src: source string
  *@n: an int
+ *Return: always 0
  */
 char *_strncpy(char *dest, char *src, int n)
 {
