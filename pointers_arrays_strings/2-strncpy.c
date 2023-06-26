@@ -9,11 +9,11 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int a = 0;
-	int b = 0;
+	int size = 0;
 
-while (src[b])
+while (src[size])
 {
-	b++;
+	size++;
 }
 
 while (a < n && src[a])
