@@ -9,21 +9,18 @@
 void reverse_array(int *a, int n)
 {
 	int m;
-	int j = 0;
+	int j;
 	int i;
 
-	for (i = n - 1; j < 1;)
+	for (i = a[n]; i != '\0'; ++i)
 	{
-	j++, i--;
-	m = a[j];
-	a[j] = a[i];
-	a[i] = m;
-	}
+    j++;
+    }
 
-	for (j = 0; i = n < i;)
-	{
-	j++;
-	i++;
-	a[i] = a[j];
-	}
+	for (j = a[n]; j < i; j++, i--)
+    {
+    m = j;
+	j = i;
+    i = m;
+    }
 }
