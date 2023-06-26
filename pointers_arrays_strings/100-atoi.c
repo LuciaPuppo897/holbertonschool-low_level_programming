@@ -11,7 +11,7 @@ int _atoi(char *s)
 {
     int sign = 1;
     int result = 0;
-	int isi = 0; //is an int
+	int isi = 0;
 
 	while (*s)
 	{
