@@ -18,7 +18,7 @@ if (i > a[n])
 --i;
 	}
 
-	for (i = a[n]; j < i; ++m, --i)
+	for (i = a[n]; j < i; ++m)
 	{
 	m = j;
 	j = i;
