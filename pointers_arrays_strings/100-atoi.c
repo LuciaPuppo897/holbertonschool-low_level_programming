@@ -9,8 +9,8 @@
  */
 int _atoi(char *s)
 {
-    int sign = 1;
-    int result = 0;
+	int sign = 1;
+	int result = 0;
 	int isi = 0;
 
 	while (*s)
@@ -18,15 +18,14 @@ int _atoi(char *s)
 		if (*s == '-')
 			{
 				sign *= -1;
-				s++;
 			}
-		while (*s >= '0' && *s <= '9')
+		else if (*s >= '0' && *s <= '9')
 		{
 			isi = 1;
 			result = (result * 10) + (*s - '0');
 			s++;
 		}
-		if (isi == 1)
+		else if (isi == 1)
 		{
 			break;
 		}
