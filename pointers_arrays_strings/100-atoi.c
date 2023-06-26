@@ -20,13 +20,13 @@ int _atoi(char *s)
 				sign *= -1;
 				s++;
 			}
-		else if (*s >= '0' && *s <= '9')
-		{ 
+		while (*s >= '0' && *s <= '9')
+		{
 			isi = 1;
 			result = (result * 10) + (*s - '0');
 			s++;
 		}
-		else if (isi == 1)
+		if (isi == 1)
 		{
 			break;
 		}
