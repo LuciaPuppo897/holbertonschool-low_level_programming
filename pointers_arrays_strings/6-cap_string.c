@@ -15,7 +15,7 @@ while (p[i])
 	k = 0;
 
 
-		while (j < 13)
+		while (k < j)
 		{
 			if ((i == 0 || p[i - 1] == cs[i]) && (p[i] >= 97 && p[i] <= 122))
 				p[i] = p[i] - 32;
