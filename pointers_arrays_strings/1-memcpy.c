@@ -4,7 +4,7 @@
  *@dest : destino
  *@src: source
  *@n: number of bytes
- *Return : always 0
+ *Return: always 0
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
