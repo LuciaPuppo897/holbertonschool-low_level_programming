@@ -19,7 +19,7 @@ char *leet(char *s)
 
 		while (b < size)
 		{
-			if (s[a] == r[b])
+			if (s[a] == r[b] && s[a] == r[b] - 32)
 			{
 				s[a] = n[b];
 			}
