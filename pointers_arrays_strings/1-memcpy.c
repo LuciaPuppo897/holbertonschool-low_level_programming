@@ -4,15 +4,15 @@
  *@dest : destino
  *@src: source
  *@n: number of bytes
- *
+ *Return : always 0
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
-{ 
-	unsigned int a;
+{
+	int b;
 
-	for (int a = 0; a < n; a++)
+	for (int b = 0; b < n; b++)
 	{
-		dest[a] = src[a];
+		dest[b] = src[b];
 	}
 	return (dest);
 }
