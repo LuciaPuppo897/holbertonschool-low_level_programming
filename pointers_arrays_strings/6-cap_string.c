@@ -1,29 +1,33 @@
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h>
+
 /**
- *cap_string - capitalize the words of a string
- *@p : the string
- * Return: a pointer
- */
-char *cap_string(char *p)
+  * cap_string - capitalize a string 
+  * @s: the string 
+  *
+  * Return: char value
+  */
+char *cap_string(char *s)
 {
-	int i= 0, k;
-	int j = 13;
-	char cs[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(',')', '{', '}'};
+	int a = 0, i;
+	int cspc = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-while (p[i])
-{
-	k = 0;
+	while (s[a])
+	{
+		i = 0;
 
-
-		while (k < j)
+		while (i < cspc)
 		{
-			if ((i == 0 || p[i - 1] == cs[i]) && (p[i] >= 97 && p[i] <= 122))
-				p[i] = p[i] - 32;
+			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
+				s[a] -= 32;
 
 			i++;
 		}
-			k++;
+
+		a++;
+	}
+
+	return (s);
 }
 
-	return (p);
-}
