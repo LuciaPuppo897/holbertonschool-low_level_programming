@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
-  * cap_string - capitalize a string 
-  * @s: the string 
+  * cap_string - capitalize a string
+  * @s: the string
   *
   * Return: char value
   */
