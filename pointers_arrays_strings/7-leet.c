@@ -7,9 +7,7 @@
   */
 char *leet(char *s)
 {
-	int a = 0; 
-	int b = 0; 
-	int size = 5;
+	int a = 0, b = 0, size = 5;
 	char r[5] = {'A', 'E', 'O', 'T', 'L'};
 	char n[5] = {'4', '3', '0', '7', '1'};
 
