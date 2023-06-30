@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include <ctype.h>
 #include <stdlib.h>
 /**
  *main - multiplies 2 values
@@ -10,19 +10,29 @@
 
 int main(int argc, char *argv[])
 {
+	int a;
 	int c;
 	int count = 0;
 
-	for (c = 0; c < argc; c++) //recorre el string
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
+	}
+	for (c = 0; c < argc; c++)
 
-		while (argc[c] => '0' && argc[c] <= '9') // mire los numeros
-			count++
-		printf(count)
-		if (argc[c]   )
+		{
+	for	(a = 0; a < argc; a++)
+
+			{
+		if (isdigit(argv[c][a]) == 0)
+		{
 		printf("Error\n");
-	return (1);
+		return (1);
 		}
+			}
+	count += atoi(argv[a]);
+		}
+	printf("%d\n", count);
 	return (0);
-
-
 }
