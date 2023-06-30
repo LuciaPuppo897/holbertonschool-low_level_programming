@@ -25,13 +25,13 @@ int main(int argc, char *argv[])
 	for	(a = 0; a < argc; a++)
 
 			{
-		if (isdigit(argv[a][c]) == 0)
+		if (isdigit(argv[c][a]) == 0)
 		{
 		printf("Error\n");
 		return (1);
 		}
 			}
-	count += atoi(argv[a]);
+	count += atoi(argv[c]);
 		}
 	printf("%d\n", count);
 	return (0);
