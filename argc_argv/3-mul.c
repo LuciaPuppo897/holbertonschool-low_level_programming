@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  *main - multiplies 2 values
  *@argc: int
@@ -7,15 +8,20 @@
  *Return: result or 1
  */
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
-	int mult = (argv[1] * argv[2]);
+	int a;
+	int	b;
 
-		if (argc < 2)
+		if (argc < 3)
 		{
-		printf("Error");
+		printf("Error\n");
 	return (1);
 		}
-	printf("\n");
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	printf("%d\n", a * b);
 	return (0);
+
+
 }
