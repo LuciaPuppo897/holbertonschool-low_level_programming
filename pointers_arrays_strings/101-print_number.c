@@ -7,9 +7,11 @@
  */
 void print_number(int n)
 {
-
+ int result = ((n % 10) * 10)
 	if (n < 0)
-	_putchar ((n * -1) + 48);
-	else
-	_putchar(n + 48);
+	{
+		result =(result * -1);
+	}
+		_putchar(n + 48);
+		return (result);
 }
