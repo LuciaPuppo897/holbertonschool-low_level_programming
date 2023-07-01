@@ -21,6 +21,6 @@ while (rot[c])
 	}
 c++;
 }
-return (0);
+return (rot);
 }
 
