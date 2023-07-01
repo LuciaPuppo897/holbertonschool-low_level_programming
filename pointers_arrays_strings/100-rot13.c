@@ -11,12 +11,12 @@ while (rot[c])
 	{
 	while ((rot[c] >= 'a' && rot[c] <= 'z') || (rot[c] >= 'A' && rot[c] <= 'Z'))
 	{
-		if (rot[c] >= 'a' && rot[c] < 'n')
+		if ((rot[c] > 'm' && rot[c] <= 'z') || (rot[c] > 'M' && rot[c] <= 'Z'))
 		{
-		rot[c] += 13;
+		rot[c] -= 13;
 		break;
 		}
-	rot[c] -= 13;
+	rot[c] += 13;
 	break;
 	}
 c++;
