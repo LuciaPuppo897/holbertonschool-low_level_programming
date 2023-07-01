@@ -20,11 +20,11 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (c = 1; c <= argc; c++)
+	for (c = 1; c < argc; c++)
 	{/*recorre*/
-	for (a = 0; a < argc; a++)
+	for (a = 0; argv[c][a] != '\0'; a++)/* recorre dentro de c */
 	{
-		if (!(isdigit(argv[c][a]))) /**se fija si e sun digito y sino da error*/
+	if (!(isdigit(argv[c][a]))) /**se fija si e sun digito y sino da error*/
 		{
 		printf("Error\n");
 		return (1);
