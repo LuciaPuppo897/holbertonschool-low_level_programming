@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (c = 1; c < argc; c++) /*recorre*/
+	for (c = 0; c <= argc; c++) /*recorre*/
 
 	{
 		if (isdigit(argv[c]) == 0) /**se fija si e sun digito y sino da error*/
