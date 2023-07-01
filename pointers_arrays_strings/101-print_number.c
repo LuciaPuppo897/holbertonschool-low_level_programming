@@ -9,7 +9,7 @@ void print_number(int n)
 {
 	int result = ((n / 10) * 10);
 
-	if (n < 0)
+	if (n < 48)
 	{
 		result = (result * -1);
 	}
