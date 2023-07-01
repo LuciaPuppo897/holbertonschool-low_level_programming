@@ -23,15 +23,15 @@ int main(int argc, char *argv[])
 	{/*recorre*/
 	for (a = 0; a < argc; a++)
 	{
-		if (isdigit(argv[c][a]) == 0) /**se fija si e sun digito y sino da error*/
+		if (!(isdigit(argv[c][a]))) /**se fija si e sun digito y sino da error*/
 		{
 		printf("Error\n");
 		return (1);
 		}
 
-		else
-		count += atoi(argv[argc]); /** transforma en intger los char y los suma*/
 	}
+		count = atoi(argv[c]);
+		return += count;	/** transforma en intger los char y los suma*/
 	}
 	printf("%d\n", count);
 	return (0);
