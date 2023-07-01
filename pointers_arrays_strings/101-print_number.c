@@ -7,7 +7,7 @@
  */
 void print_number(int n)
 {
-	int result = n
+	int result = n;
 
 	if (n < 48)
 	{
