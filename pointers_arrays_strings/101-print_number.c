@@ -8,7 +8,7 @@
 void print_number(int n)
 {
 
-	if (n < 0)
+	if (n < 48)
 	_putchar ((n * -1) + 0);
 	else
 	_putchar(n + 0);
