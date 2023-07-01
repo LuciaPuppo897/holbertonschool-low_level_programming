@@ -29,7 +29,8 @@ int main(int argc, char *argv[])
 		return (1);
 		}
 
-		else count += atoi(argv[c]); /** transforma en intger los char y los suma*/
+		else
+		count += atoi(argv[argc]); /** transforma en intger los char y los suma*/
 	}
 	}
 	printf("%d\n", count);
