@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
 {
 	int a;
 	int c;
-	int count = 0;
+	int count;
+	int result = 0;
 
 	if (argc == 1) /* si solo tiene ./ gcc y ningun num*/
 	{
@@ -31,8 +32,8 @@ int main(int argc, char *argv[])
 
 	}
 		count = atoi(argv[c]);
-		return += count;	/** transforma en intger los char y los suma*/
+		result += count;	/* transforma en intger los char y los suma*/
 	}
-	printf("%d\n", count);
+	printf("%d\n", result);
 	return (0);
 }
