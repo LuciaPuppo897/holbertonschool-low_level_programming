@@ -27,7 +27,6 @@ int main(int argc, char *argv[])
 		}
 
 	count += atoi(argv[c]);
-	count1
 	}
 	printf("%d\n", count);
 	return (0);
