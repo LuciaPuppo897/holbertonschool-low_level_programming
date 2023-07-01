@@ -11,13 +11,14 @@
 int main(int argc, char *argv[])
 {
 	int c;
-	int count = 0; 
+	int count = 0;
+
 	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-	for (c = 1; c < argc; c++)
+	for (c = 1; c <= argc; c++)
 
 	{
 		if (isdigit(argv[c]) == 0)
