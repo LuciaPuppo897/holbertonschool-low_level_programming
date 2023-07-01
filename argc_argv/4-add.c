@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	for (c = 1; c < argc; c++)
 
 		{
-	for	(a = 1; a < argc; a++)
+	for	(a = 0; a <= argc; a++)
 
 			{
 		if (isdigit(argv[c][a]) == 0)
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		return (1);
 		}
 			}
-	count += atoi(argv[c]);
+	count += atoi(argv[c][a]);
 		}
 	printf("%d\n", count);
 	return (0);
