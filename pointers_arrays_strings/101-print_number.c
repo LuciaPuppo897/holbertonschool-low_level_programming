@@ -7,11 +7,15 @@
  */
 void print_number(int n)
 {
-	int result = n;
+	unsigned int result = n;
 
-	if (n < 48)
+	if (n < 0)
 	{
 		result = (result * -1);
+		_putchar('-');
 	}
-		_putchar(result + 48);
+	if ((result / 10) > 0)
+		print_number(result / 10);
+
+	_putchar((result % 10) + '0');
 }
