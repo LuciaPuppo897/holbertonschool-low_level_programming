@@ -7,11 +7,20 @@
  */
 char *rot13(char *rot)
 {	int c = 0;
-
-	for (c = 0; rot[c] != '\0'; c++)
+while (rot[c])
 	{
-		if (*(rot + c) >= 'a' && *(rot + c) < 'n')
-			*(rot + c) += 13;
+	while ((rot[c] >= 'a' && rot[c] <= 'z' || rot[c] >= 'A' && rot[c] <= 'Z'))
+	{
+		if (rot[c] >= 'a' && rot[c] < 'n')
+		{
+		rot[c] += 13;
+		break;
+		}
+	rot[c] -= 13;
+	break;
 	}
+c++;
+}
 return (0);
 }
+
