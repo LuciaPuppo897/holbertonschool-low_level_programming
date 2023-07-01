@@ -19,10 +19,10 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (c = 0; c < argc; c++)
+	for (c = 1; c < argc; c++)
 
 		{
-	for	(a = 0; a < argc; a++)
+	for	(a = 1; a < argc; a++)
 
 			{
 		if (isdigit(argv[c][a]) == 0)
