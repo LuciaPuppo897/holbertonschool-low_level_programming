@@ -12,8 +12,6 @@ char *rot13(char *rot)
 	{
 		if (*(rot + c) >= 'a' && *(rot + c) < 'n')
 			*(rot + c) += 13;
-		else if (*(rot + c) >= 'n' && *(rot + c) <= 'z')
-			*(rot + c) -= 13;
 	}
 return (0);
 }
