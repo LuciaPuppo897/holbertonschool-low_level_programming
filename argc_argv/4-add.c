@@ -13,21 +13,21 @@ int main(int argc, char *argv[])
 	int c;
 	int count = 0;
 
-	if (argc == 1)
+	if (argc == 1) /* si solo tiene ./ gcc y ningun num*/
 	{
 		printf("0\n");
 		return (0);
 	}
-	for (c = 1; c <= argc; c++)
+	for (c = 1; c < argc; c++) /*recorre*/
 
 	{
-		if (isdigit(argv[c]) == 0)
+		if (isdigit(argv[c]) == 0) /**se fija si e sun digito y sino da error*/
 		{
 		printf("Error\n");
 		return (1);
 		}
 
-	count += atoi(argv[c]);
+		else count += atoi(argv[c]); /** transforma en intger los char y los suma*/
 	}
 	printf("%d\n", count);
 	return (0);
