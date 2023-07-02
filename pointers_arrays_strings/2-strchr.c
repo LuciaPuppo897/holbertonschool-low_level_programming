@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 
 	s++;
 	}
-	if (*s == c)
+	if (*s == c) /** check fot the last value of the string*/
 
 		return (s);
 
