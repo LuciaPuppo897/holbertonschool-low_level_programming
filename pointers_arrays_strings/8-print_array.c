@@ -19,7 +19,7 @@ void print_array(int *a, int n)
 
 for (c = 0; c < n; c++)
 {	printf("%d", a[c]);
-	if (c != n - 1)
+	if (c != n - 1)   /** verifica si el elemento no es el ultimo para imprimir el , */
 		printf(", ");
 	if (c == n - 1)
 		printf("\n");
