@@ -10,8 +10,8 @@
 char *_strdup(char *str)
 {
 	int size = strlen(str);
-	char *p = char 
-	char = copy
+	char *p;
+	char *copy;
 	p = malloc(sizeof(char) * size + 1);
 
 	if (str == NULL)
