@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
 /**
  *_strdup - copy a string adn returns a pointer
  *@str: the porinter origin
@@ -14,10 +13,10 @@ char *_strdup(char *str)
 	char *p = (char *)malloc(sizeof(char) * size + 1);
 	char *copy;
 
-	if (p == NULL)
+	if (str == NULL)
 		return (NULL);
 
-	if (str == NULL)
+	if (p == NULL)
 		return (NULL);
 
 copy = p;
