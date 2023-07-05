@@ -10,7 +10,6 @@
 char *_strdup(char *str)
 {
 	char *p;
-	char *copy;
 	int i;
 	p = malloc(sizeof(char) * (strlen(str) + 1));
 
