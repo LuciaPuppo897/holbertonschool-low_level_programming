@@ -5,14 +5,14 @@
  *_strdup - copy a string adn returns a pointer
  *@str: the porinter origin
  *
- *Return: 0
+ *Return: pointer
  */
 char *_strdup(char *str)
 {
-	int size = strlen(str);
 	char *p;
 	char *copy;
-	p = malloc(sizeof(char) * size + 1);
+
+	p = malloc(sizeof(char) * (strlen(str) + 1));
 
 	if (str == NULL)
 		return (NULL);
