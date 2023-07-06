@@ -15,10 +15,11 @@ int **alloc_grid(int width, int height)
 	int row;
 	int col;
 
-  if (width <= 0 || height <= 0)
-    return (NULL);
-
-  p = (int **)malloc(sizeof(int *) * height);
+	if (width <= 0 || height <= 0)
+	{
+		return (NULL);
+	}
+	p = (int **)malloc(sizeof(int *) * height);
 
 if (p == NULL)  /** declaro espacio para las filas*/
 {
@@ -26,14 +27,14 @@ if (p == NULL)  /** declaro espacio para las filas*/
 }
 	for (row = 0; row < height; row++)
 	{
-	p[row] = (int *)malloc(sizeof(int *) * width);
-	if (p[row] == NULL)
+	p[row] = (int *)malloc(sizeof(int) * width);
+	if (p[row] == NULL) /* solo int porqur no es punter*/
 	{
 		for (col = 0; col < row; col++)
 		{
 			free(p[col]);
 		}
-		free (p);
+		free(p);
 	}
 	}
 	for (row = 0; row < height; row++)
