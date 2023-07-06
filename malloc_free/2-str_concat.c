@@ -36,5 +36,5 @@ while (*s2 != '\0') /**concateno el segundo*/
 	i++;
 }
 
-  return (rtn);
+	return (rtn);
 }
