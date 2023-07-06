@@ -21,15 +21,20 @@ int **alloc_grid(int width, int height)
   p = (int **)malloc(sizeof(int *) * height);
 
 if (p == NULL)  /** declaro espacio para las filas*/
-{	
+{
 	return (NULL);
 }
 	for (row = 0; row < height; row++)
 	{
 	p[row] = (int *)malloc(sizeof(int *) * width);
 	if (p[row] == NULL)
-		return (NULL);
-
+	{
+		for (col = 0; col < row; col++)
+		{
+			free(p[col]);
+		}
+		free (p);
+	}
 	}
 	for (row = 0; row < height; row++)
 	{
