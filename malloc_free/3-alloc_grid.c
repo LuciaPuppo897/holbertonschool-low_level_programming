@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * print_chessboard - gives a pointer to a d2 array
+ * alloc_grid - gives a pointer to a d2 array
  * @width: largo
  * @height: ancho
  * Return: void
