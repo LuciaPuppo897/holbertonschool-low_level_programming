@@ -10,22 +10,31 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *p, *q, *rtn;
+	int i = 0;
+	char *rtn;
 if (s1 == NULL)
 	s1 = "";
 if (s2 == NULL)
 	s2 = "";
 
-rtn = q = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
+rtn  = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
 
 	if (rtn == NULL)
 		return (NULL);
 
-for (p = 0;  (*q = *p) != '\0'; ++p, ++q)
-	;	
-   /**concatena en un nuevo punt s1*/
-	for (p = s2; (*q = *p) != '\0'; ++p, ++q)
-	;
+while (*s1 != '\0')
+{
+	rtn[i] = *s1; /** concateno el primero*/
+	s1++;
+	i++;
+
+}
+while (*s2 != '\0') /**concateno el segundo*/
+{
+	rtn[i] = *s2;
+	s2++;
+	i++;
+}
 
   return (rtn);
 }
