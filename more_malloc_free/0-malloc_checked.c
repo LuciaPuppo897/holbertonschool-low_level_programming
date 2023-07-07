@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *create_array - creates an array
+ *malloc_checked - creates an array
  *@b: int
  *
  *Return: pointer
