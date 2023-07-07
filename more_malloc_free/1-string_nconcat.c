@@ -12,7 +12,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int size1, size2, length;
 	char *rtn;
-	int i;
 if (s1 == NULL)
 	s1 = "";
 if (s2 == NULL)
@@ -31,19 +30,10 @@ rtn  = malloc(sizeof(char) * (length + 1));
 	if (rtn == NULL)
 		return (NULL);
 
-while (*s1 != '\0')
-{
-	rtn[i] = *s1; /** concateno el primero*/
-	s1++;
-	i++;
 
-}
-while (*s2 != '\0') /**concateno el segundo*/
-{
-	rtn[i] = *s2;
-	s2++;
-	i++;
-}
+strcpy (rtn, s1);
+
+strncat(rtn, s2, n);
 
 	return (rtn);
 }
