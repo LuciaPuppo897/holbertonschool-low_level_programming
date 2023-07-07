@@ -31,7 +31,7 @@ rtn  = malloc(sizeof(char) * (length + 1));
 		return (NULL);
 
 
-strcpy (rtn, s1);
+strcpy(rtn, s1);
 
 strncat(rtn, s2, n);
 
