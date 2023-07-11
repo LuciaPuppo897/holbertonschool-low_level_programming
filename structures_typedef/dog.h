@@ -1,4 +1,5 @@
-/**
+#ifndef _HEADER_
+#define _HEADER_/**
  * struct my_struct - Short description
  * @name: First member
  * @age: Second member
@@ -8,7 +9,8 @@
  */
 struct dog
 {
-	char * name;
+	char* name;
 	float age;
-	char * owner;
+	char* owner;
 };
+#endif
