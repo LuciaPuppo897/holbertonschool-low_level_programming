@@ -18,12 +18,15 @@ int namelen, ownlen, i;
 
 	dogg = malloc(sizeof(dog_t));
 	if (dogg == NULL)
-	return (NULL); /**nuevo puntero*/
-
+	{
+		return (NULL);
+	}/**nuevo puntero*/
+	
 	/**copy the name varible*/
 	dogg->name = malloc(namelen * sizeof(char));
 	if (dogg == NULL)
-	{		free(dogg);
+	{		
+	free(dogg);
 	return (NULL);
 	}
 	for (i = 0; i < namelen; i++)
@@ -34,7 +37,8 @@ int namelen, ownlen, i;
 	dogg->owner = malloc(ownlen * sizeof(char));
 
 	if (dogg == NULL)
-	{		free(dogg->name);
+	{		
+		free(dogg->name);
 		free(dogg);
 	return (NULL);
 	}
