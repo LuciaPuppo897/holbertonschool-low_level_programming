@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "dog.h"
 /**
- * init_og - dog information
+ * init_dog - dog information
  * @name: First member
  * @age: Second member
  * @owner: Third member
