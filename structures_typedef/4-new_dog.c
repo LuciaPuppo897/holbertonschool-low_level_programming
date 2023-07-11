@@ -12,20 +12,17 @@ dog_t *new_dog(char *name, __attribute__((unused)) float age, char *owner)
 {
  int namelen, ownlen,i;
  dog_t *dogg;
-	namelen = ownlen = 0;
- while(name[namelen++])
-	;
- while(owner[ownlen++])
-	;
+	namelen = (strlen(*name) + 1)
+	ownlen = (strlen(*ownlen) + 1)
 	dogg = malloc(sizeof (dog_t));
 	if (dogg == NULL)
 	return (NULL);
 	for (i = 0; i < namelen; i++)
 		dogg->name[i] = name[i]; /**copy the name varible*/
-	dogg->name = malloc(namelen * sizeof(dogg->name));
+	dogg->name = malloc(namelen * sizeof(char));
 	if (dogg == NULL)
 	return (NULL);
-	dogg->owner = malloc(ownlen * sizeof(dogg->owner));
+	dogg->owner = malloc(ownlen * sizeof(char));
 	if (dogg == NULL)
 	return (NULL);
 	for (i = 0; i < ownlen; i++) /**recorre para copiar*/
