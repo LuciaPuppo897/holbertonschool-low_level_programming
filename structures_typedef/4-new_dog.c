@@ -14,7 +14,7 @@ dog_t *new_dog(char *name, __attribute__((unused)) float age, char *owner)
  int namelen, ownlen,i;
  dog_t *dogg;
 	namelen = (strlen(name) + 1);
-	ownlen = (strlen(ownlen) + 1);
+	ownlen = (strlen(owner) + 1);
 	dogg = malloc(sizeof (dog_t));
 	if (dogg == NULL)
 	return (NULL);
