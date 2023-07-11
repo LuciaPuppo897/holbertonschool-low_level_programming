@@ -8,7 +8,7 @@
  * @d: fourth member
  * Return: nothing
  */
-dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, __attribute__((unused)) float age, char *owner)
 {
  int namelen, ownlen,i;
  dog_t *dogg;
