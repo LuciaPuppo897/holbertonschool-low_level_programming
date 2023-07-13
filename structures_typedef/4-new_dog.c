@@ -1,49 +1,41 @@
-#include <stdlib.h>
 #include "dog.h"
+#include <stdlib.h>
 #include <string.h>
 /**
- * new_dog - stores new dog information
- * @name: First member
- * @age: Second member
- * @owner: Third member
- * Return: dogg
- */
+  * new_dog - creates a new struct of type dog
+  * @name: struct parameter name
+  * @age: struct parameter age
+  * @owner: struct parameter owner
+  * Return: returns pointer to buffer of datatype dog
+  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int namelen, ownlen, i;
-	dog_t *dogg;
+	int nlen, olen, i;
+	dog_t *doggy;
 
-	namelen = strlen(name) + 1;
-	ownlen = strlen(owner) + 1;
+	nlen = olen = 0;
+	nlen = strlen (name) + 1;
+	olen = strlen (owner) + 1;
 
-	dogg = malloc(sizeof(dog_t));
-	if (dogg == NULL)
-	{
+	doggy = malloc(sizeof(dog_t));
+	if (doggy == NULL)
 		return (NULL);
-	}/**nuevo puntero*/
-	
-	/**copy the name varible*/
-	dogg->name = malloc(namelen * sizeof(char));
-	if (dogg == NULL)
-	{		
-	free(dogg);
-	return (NULL);
-	}
-	for (i = 0; i < namelen; i++)
-		dogg->name[i] = name[i];
 
-	dogg->age = age;
+	doggy->name = malloc(nlen * sizeof(char));
+	if (doggy == NULL)
+	return (NULL); /**recorre name*/
 
-	dogg->owner = malloc(ownlen * sizeof(char));
+	for (i = 0; i < nlen; i++)
+		doggy->name[i] = name[i];
 
-	if (dogg == NULL)
-	{		
-		free(dogg->name);
-		free(dogg);
-	return (NULL);
-	}
-	for (i = 0; i < ownlen; i++) /**recorre para copiar*/
-	dogg->owner[i] = owner[i]; /**copy the owner variable*/
+	doggy->age = age;
 
-	return (dogg);
+	doggy->owner = malloc(olen * sizeof(char));
+
+	if (doggy == NULL) /**recorre el owner*/
+		return (NULL);
+	for (i = 0; i < olen; i++)
+
+		doggy->owner[i] = owner[i];
+	return (doggy);
 }
