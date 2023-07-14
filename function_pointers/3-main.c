@@ -8,21 +8,22 @@
 int main(int argc, char *argv[])
 {
   int func;
-  int a, b;
+  int a;
+  int b;
 
   if (argc != 4)
     {
-    printf("%s\n", "Error");
+    printf("Error\n");
     exit (98);
     }
-if (get_op_func(argv[2] == NULL)
+	if (get_op_func(argv[2]) == NULL)
 	{
-	printf("%s\n", Error);
+	printf("Error\n");
 	exit (99);
 	}
 
-	a = atoi (argv[2]);
-	b = atoi (argv[3]);
+	a = atoi(argv[2]);
+	b = atoi(argv[3]);
 	func = get_op_func(argv[2])(a, b);
 
 	printf("%d\n", func);
