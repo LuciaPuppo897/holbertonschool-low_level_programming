@@ -16,7 +16,7 @@ int print (const char *format, ...)
   {
     if (*i != '%')
     {
-    putchar(*i);
+    putchar(*i); /** lo llamamos directo en el printf*/ 
     continue;;
     }
   
@@ -25,15 +25,17 @@ int print (const char *format, ...)
     {
       putchar('%');
       i++;
-      continue; 
     }
-   
-    if (*i == 'c')
+    
+void print_c (int c)
+{
+    if (*i == 'c') /** 
     {
       c = va_arg(arg, int);
       putchar(c);
     }
   }
+ 
   void print_s(*char)
   {
 	int s;
@@ -43,29 +45,26 @@ int print (const char *format, ...)
     putchar(s);    
   }
   } 
-  /** print a string */ 
+  /** print a string */
+  
 
-  void print_d(int num)
-{
-	const char i; /** chusmear /
-if (num < 0)
-{
-	num = -num;
-	putchar ("-");
-}
-	int div = 1;
-	while ((num/div) <= 10)
-	div *= 10;
-
-while (div != 0)
-{
-	int digit = (num/div);
-	putchar('0' + digit);
-	num %= div;
-	div /= 10;   /** print a decimal*/
-}
+    putchar('0' + *str);
 }
 
+void print_d(int num)
+{
+    char* str = itoa(num,10);  // Convertir el número en una cadena de caracteres
+    putchar('0' + *str);
+}
+
+    putchar('0' + *str);
+}
+
+void print_i(int num)
+{
+    char* str = itoa(num,10);  // Convertir el número en una cadena de caracteres
+    putchar('0' + *str);
+}
 
 void print_lit%(char) /** prints a literal % */
 {
