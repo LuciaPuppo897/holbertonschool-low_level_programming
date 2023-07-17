@@ -1,0 +1,82 @@
+#include <stdarg.h>
+#include <string.h>
+#include <stdio.h>
+
+int print (const char *format, ...)
+{
+  const char *i;
+  int c; 
+  int s; 
+  int num; 
+
+  va_list(arg);
+  va_start(arg, format);
+
+  for (i = format; *i != '\0'; i++)
+  {
+    if (*i != '%')
+    {
+    putchar(*i);
+    continue;;
+    }
+  
+    if (*(i + 1) == "%" || *(i + 1) == "\0")
+    // handle the double '%' or end of  format string
+    {
+      putchar('%');
+      i++;
+      continue; 
+    }
+   
+    if (*i == 'c')
+    {
+      c = va_arg(arg, int);
+      putchar(c);
+    }
+  }
+  void print_s(*char)
+  {
+	int s;
+  int num_args = strlen(*format);
+  for(s = 0; s < num_args; s++)
+  {
+    putchar(s);    
+  }
+  } 
+  /** print a string */ 
+
+  void print_d(int num)
+{
+	const char i; /** chusmear /
+if (num < 0)
+{
+	num = -num;
+	putchar ("-");
+}
+	int div = 1;
+	while ((num/div) <= 10)
+	div *= 10;
+
+while (div != 0)
+{
+	int digit = (num/div);
+	putchar('0' + digit);
+	num %= div;
+	div /= 10;   /** print a decimal*/
+}
+}
+
+
+void print_lit%(char) /** prints a literal % */
+{
+	int i;
+
+  	if (*i == '%' && *(i + 1) == 'i')
+  {
+    i++;
+    putchar("%");
+  }
+}
+  va_end(arg);
+  return(0);
+}
