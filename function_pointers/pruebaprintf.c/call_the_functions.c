@@ -1,30 +1,38 @@
 #include "main.h"
 /**
 * call_functions - call the needed function
-*@specifier: the specific format
+*@t_formt: the specific format
+*@args: arguments
 *Return: a pointer to that function
 */
 
-int (*call_functions (const char *spc))(va_list)
+int(*call_functions (char t_formt, va_list args))
 {
 form_t specifiers[] = {
-	{"s", print_s},
-	{"c", print_c},
-	{"d", print_d},
-	{"i", print_i},
-	{"%", print_percent}
-	{NULL, NULL},
+    {'s', print_s},
+    {'c', print_c},
+    {'d', print_d},
+    {'i', print_i},
+    {NULL, NULL},
 };
 
 int i;
-while (specifiers[i].form) 
+int count = 0;
+
+while (specifiers[i].form)
 {
-    if (strcmp(spc, specifiers[i].form) == 0) // compara los elementos del array con los formatos que nos pasan
+if (t_formt == specifiers[i].form)// compara los elementos del array con los formatos que nos pasan
     {
-		return =(specifiers[i].f); 
-        
+	count += specifiers[i].f(args);
     }
     i++;
+
+  if (count == 0)
+	{
+	count += _putchar('%');
+    count += _putchar (t_formt);
+
 }
-return (NULL);
+}
+	  return (count);
 }

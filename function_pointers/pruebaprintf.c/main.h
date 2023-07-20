@@ -6,13 +6,13 @@
 #include <string.h>
 /**
   * struct printf_format - a structure
-  *@printf_format> a pointer
-  *@f: variable
+  *@printf_format: the specific format
+  *@f: pointer to function
   */
-	typedef struct form
+typedef struct form
 {
-    char *printf_format; // printf_conditions
-		int (*f)(va_list list);
+    char form; // printf_formats
+    int (*f)(va_list);
 } form_t;
 
 
@@ -22,7 +22,8 @@ void print_c(va_list list);
 void print_percent();
 void print_d(va_list list);
 void print_i(va_list list);
-	int _printf(const char *format, ...);
-int (*call_functions (const char *specifier))(va_list);
+int _printf(const char *format, ...);
+
 #endif
+
 
