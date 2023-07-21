@@ -6,23 +6,24 @@
 *Return: a pointer to that function
 */
 
-int(*call_functions (char t_formt, va_list args))
-{
-form_t specifiers[] = {
-    {'s', print_s},
-    {'c', print_c},
-    {'d', print_d},
-    {'i', print_i},
-    {NULL, NULL},
-};
+int call_functions (char t_formt, va_list args)
 
-int i;
-int count = 0;
+{
+	int i = 0;
+	int count = 0;
+
+form_t specifiers[] = {
+	{'s', print_s},
+	{'c', print_c},
+	{'d', print_d},
+	{'i', print_d},
+	{0, NULL},
+};
 
 while (specifiers[i].form)
 {
-if (t_formt == specifiers[i].form)// compara los elementos del array con los formatos que nos pasan
-    {
+if (t_formt == specifiers[i].form)
+	{
 	count += specifiers[i].f(args);
     }
     i++;
@@ -34,5 +35,5 @@ if (t_formt == specifiers[i].form)// compara los elementos del array con los for
 
 }
 }
-	  return (count);
+	return (count);
 }

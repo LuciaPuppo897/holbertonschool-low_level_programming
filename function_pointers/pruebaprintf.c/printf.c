@@ -3,45 +3,46 @@
 #include <stdio.h>
 /**
  *_printf - print f function
- *@format: format specifications
+ *@format: format
  *Return: alway success
  */
 int _printf(const char *format, ...)
 {
-	const char *i;
-	int *(func)(va_list);
-int count = 0;
-va_list(args);
-va_start(args, format);
+va_list args;
+	int i = 0;
+	int	count = 0;
+	int count2;
 
-	for (i = format; *i != '\0'; i++)
+	va_start(args, format);
+	if (format == 0 || (format[0] == '%' && format[0 + 1] == ' '))
+		return (-1);
+	if (format[0] == '%' && format[1] == ' ' && !format[2])
+		return (-1);
+	while (format[i])
 	{
-	if (*i == '%')
+		count2 = 0;
+		if (format[i] == '%')
 		{
-		i++;
-	func = call_function(*i);
-			if (*i == '\0')
-	{
-	return (-1); // indicates error
-	}
-			else if (func == NULL) // didnt match any functions
+			if (!format[i + 1] || (format[i + 1] == ' ' && !format[i + 2]))
 			{
-	_putchar(*(i - 1)); // if %+1 was not any specfic format
-				putchar(*i);
-				count += 2; // we print two things
+				count = -1;
+				break;
 			}
-	else
-	{
-	count += func(args); // llama a la funcion que corresponda
-	}
-	}
-	else
-	{
-	putchar(*i); /** si en ningun momento encuentra % */
-	count++;
-	}
-    i++;
+			count2 += call_functions(format[i + 1], args);
+			if (count2 == 0)
+				count += _putchar(format[i + 1]);
+			if (count2 == -1)
+				count = -1;
+			i++;
+		}
+		else
+		{
+		(count == -1) ? (_putchar(format[i])) : (count += _putchar(format[i]));
+		}
+	i++;
+	if (count != -1)
+	count += count2;
 	}
 	va_end(args);
-return (count);
+	return (count);
 }

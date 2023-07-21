@@ -11,19 +11,18 @@
   */
 typedef struct form
 {
-    char form; // printf_formats
+    char form;
     int (*f)(va_list);
 } form_t;
 
 
 int _putchar(char c);
-void print_s(va_list list);
-void print_c(va_list list);
-void print_percent();
-void print_d(va_list list);
-void print_i(va_list list);
+int print_s(va_list args);
+int print_c(va_list args);
+int print_d(va_list args);
+int print_i(va_list args);
 int _printf(const char *format, ...);
-
+int call_functions (char t_formt, va_list args);
 #endif
 
 
