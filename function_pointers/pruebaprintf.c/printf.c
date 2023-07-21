@@ -30,7 +30,7 @@ va_list args;
 			}
 			count2 += call_functions(format[i + 1], args);
 			if (count2 == 0)
-				count += _putchar(format[i + 1]);
+				count += _putchar(format[i +1]);
 			if (count2 == -1)
 				count = -1;
 			i++;

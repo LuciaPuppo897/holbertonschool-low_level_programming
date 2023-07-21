@@ -16,6 +16,7 @@ form_t specifiers[] = {
 	{'s', print_s},
 	{'c', print_c},
 	{'d', print_d},
+	{'%', print_p},
 	{'i', print_d},
 	{0, NULL},
 };
@@ -30,7 +31,7 @@ if (t_formt == specifiers[i].form)
 
   if (count == 0)
 	{
-	count += _putchar('%');
+		count += _putchar('%');
     count += _putchar (t_formt);
 
 }

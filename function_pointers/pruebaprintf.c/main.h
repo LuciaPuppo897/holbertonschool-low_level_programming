@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <unistd.h>
 /**
   * struct printf_format - a structure
   *@printf_format: the specific format
@@ -20,7 +20,7 @@ int _putchar(char c);
 int print_s(va_list args);
 int print_c(va_list args);
 int print_d(va_list args);
-int print_i(va_list args);
+int print_p(va_list args);
 int _printf(const char *format, ...);
 int call_functions (char t_formt, va_list args);
 #endif

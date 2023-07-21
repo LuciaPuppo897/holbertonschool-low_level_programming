@@ -39,3 +39,17 @@ int print_c(va_list args)
 	return (1);
 }
 
+/**
+*printsign - print sign.
+*@args: arguments.
+* Return: count chars.
+*/
+
+int print_p(va_list args)
+{
+	(void)args;
+
+	_putchar('%');
+
+	return (1);
+}
