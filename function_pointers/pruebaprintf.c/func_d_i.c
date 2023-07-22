@@ -1,35 +1,41 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stdio.h>
 /**
  *print_d - prints an integer in base 10
- *args: arguments
- *Return: nothing
+ *@args: the argumetns it receives
+ *Return: amount of printed chars
  */
-
 int print_d(va_list args)
 {
-	int num = (va_arg(args, int));
+	long int num = va_arg(args, long int);
+	char digit[20];
 	int p = 0;
-	int digit[20];
-	char sign;
+	char sign ;
+	int count = 0;
 
-  if (num < 0)
+	if (num < 0)
 	{
 	num = -num;
 	sign = 1;
-	}
-  while (num != 0)
-	{
-  digit[p] = num % 10;
-  num /= 10;
-  p++;
-  }
-	if (sign == 1)
-_putchar ('-');
+	count++;
+    }
 
-  while (p > 0)
+    do {
+	digit[p++] = '0' + (num % 10);
+	num /= 10;
+	} while (num > 0);
+
+if (sign == 1)
 	{
-_putchar ('0' + digit[--p]);
+	_putchar(45);
 	}
-  return (1);
+
+    while (p > 0)
+	{
+    _putchar(digit[--p]);
+	count++;
+	}
+
+	return (count);
 }

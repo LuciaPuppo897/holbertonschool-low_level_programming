@@ -32,10 +32,10 @@ int print_s(va_list args)
 
 int print_c(va_list args)
 {
-	char c;
+  char c = (char)(va_arg(args, int));
 
-	c = (va_arg(args, int));
 	_putchar(c);
+
 	return (1);
 }
 
@@ -48,8 +48,6 @@ int print_c(va_list args)
 int print_p(va_list args)
 {
 	(void)args;
-
 	_putchar('%');
-
-	return (1);
+return (1);
 }

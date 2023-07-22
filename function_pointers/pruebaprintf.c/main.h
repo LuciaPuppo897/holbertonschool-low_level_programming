@@ -11,7 +11,7 @@
   */
 typedef struct form
 {
-    char form;
+    char *form;
     int (*f)(va_list);
 } form_t;
 
@@ -22,7 +22,8 @@ int print_c(va_list args);
 int print_d(va_list args);
 int print_p(va_list args);
 int _printf(const char *format, ...);
-int call_functions (char t_formt, va_list args);
+int call_functions(const char *format, form_t specifiers[], va_list args);
+
 #endif
 
 
