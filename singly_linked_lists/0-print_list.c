@@ -8,7 +8,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	int i;
+	size_t i;
 
 	for (i = 0; h; i++)
 {
@@ -20,7 +20,6 @@ size_t print_list(const list_t *h)
 	else
 		printf("[0], nil\n");
 
-	i++;
 }
 return (i);
 }
