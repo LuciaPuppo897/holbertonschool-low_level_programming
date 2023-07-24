@@ -17,5 +17,7 @@ size_t print_list(const list_t *h)
 	current = current->next; /** goes to the next node*/
 	count++;
 }
+if (h == NULL)
+	printf("[0] (nil)");
 	return (count);
 }
