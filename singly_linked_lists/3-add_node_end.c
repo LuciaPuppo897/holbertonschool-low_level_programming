@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  *add_node_end - add new node the end
- *@head: pointer to the first node 
+ *@head: pointer to the first node
  *@str: char
  *Return:new node
  */
