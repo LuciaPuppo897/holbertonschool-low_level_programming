@@ -2,18 +2,19 @@
 #include "lists.h"
 /**
  *free_list - free memory
- *@head: teh first node
+ *@head: the first node
  *Return: nothing
  */
 void free_list(list_t *head)
 {
 	list_t *current = head;
-	list_t *temp = current;
+	list_t *next;
 
 while (current != NULL)
 	{
-	current = current->next;
-	free(temp->str);
-	free(temp);
+	next = current->next;
+	free(next->str);
+	free(next);
+	current = next;
 	}
 }
