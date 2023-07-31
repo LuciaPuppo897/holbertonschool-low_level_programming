@@ -1,10 +1,10 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * delete_dnodeint_at_index - deletes node at index of a list
  * @head: the first node of the list
  * @index: the position of the node
- * Return: 1 or -1
+ * Return: error or not
  */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
