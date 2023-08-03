@@ -11,8 +11,9 @@ unsigned long int i;
 int printed;
 
 if (ht == NULL)
-	return;
-
+{
+return;
+}
 	printf("{");
 
 	printed = 0;
