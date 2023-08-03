@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int byrd = 1024, bywr = 0;
 
 	if (argc != 3)
-	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), return (97);
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit (97);
 
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
